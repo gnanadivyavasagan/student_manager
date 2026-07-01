@@ -1,0 +1,160 @@
+ 
+ General structrue of C programming:
+ -----------------------------------
+ comments
+ pre-processor directives
+ function declarations
+ global variables
+ main() 
+ {
+	local varibles;
+	--------------
+	--------------  //statements
+	--------------
+	fun(); //function calls
+ }
+ fun() //function definitions.
+ {
+	local variables;
+	-----------
+	----------- //statements
+	-----------
+ }
+
+ comments : 
+ ---------
+	Comments are written just for user understanding purpose.
+        Comments maintains the good documentability.
+	These statements are not a part of code.
+
+	These statements are removed during compilation process and creates excutable file.           	
+
+	Comments are 2 types.
+	1) Single line comments (//----------)
+	2) multiple line comments (/* -------
+				      -------
+				      -------
+				      ------- */)
+
+
+  pre-processor directives:
+  -------------------------
+	The statements starts with '#' symbol is called pre-processor directives.
+
+ 	There are some of the pre-processor directives are
+ frequently used. They are
+
+	1) #include  2) #define  3) #if  4) #else 5) #ifdef
+	6) #ifndef   7) #elif  8)#endif  9) #undef 10) #pragma 
+	and etc.
+
+  In these very frequently used pre-processor directives are
+  1) #include   2) #define 
+
+
+ 1) #include : This pre-processor directive is used for inclusion
+    --------   of header files. 
+
+    Header file : it is a file, which is extended with .h extension
+    ------------  and it containes all the pre-defined function 
+		  declarations and pre-defined macro definitions.  
+
+
+	pre-defined function declarations
+			+
+	pre-defined macro definitions
+
+ 
+    function: 
+    ---------  It is a sub program in a main program to perform,
+    a specific task.	
+
+    To design any function, there are 3 aspects.
+
+    1) function declaration : it is an intimation to a compiler
+       --------------------  that what type of function it is.
+
+    2) function call : To call a function. 
+       ---------------	
+    3) function definition : actual function implementation.
+       --------------------	
+
+	syntax for function :
+	--------------------------
+
+	return-type function_name(arguements);
+
+
+		     function catogories
+		-----------------------------
+			      |
+			      |
+	------------------------------------------------
+	|					       |
+	|					       |
+   Pre-defined functions		 User-defined functions	
+	 
+    (library functions)			   (user implemented 
+					    functions in program)
+
+   
+    function-aspect          pre-defined fun        User-defined fun
+     --------------------          ---------------------       -----------------------
+    fun declaration             header file                  program
+
+    fun call                         program                     program
+
+    fun definition                library                        program
+
+
+   #define: it is a pre-processor directive, which is used 
+   -------- to define the macros.  
+
+   macro : it is symbol, which is replaced by something.	
+   ------
+   
+   Syntax : #define  macro   macro_body
+                    (symbol) (expressions or statements or
+			      constants or keywords or etc)
+
+   Ex : #define pi 3.14  
+
+			  macros
+			 --------
+			    |
+			    |
+	-------------------------------------------
+	|					  |
+	|					  |
+   pre-defined macros                    user defined macros
+  (in Header files)                      (in program)
+
+
+
+   C program is a bulding blocks of functions.
+   if a C program containes atleast one function means, then it must
+   be main();
+
+   Every C program execution starts from main().
+
+   
+   variable :  it is a name to a memory to store a value. 
+   ---------   the value can be changed during run-time.
+
+   there are 2 types of variables.
+   1) local variables
+   2) global variables.
+
+   1) local variable: the variable data should be used with in 
+      --------------- the function only.
+
+   2) global variable: the variables data can be used in  
+      ---------------- anywhere in the program among all fuctions.		
+
+     At the time of compilation, header files and library information is added to the program.
+
+     Headerfiles and libraries are there in the compiler.
+
+
+
+

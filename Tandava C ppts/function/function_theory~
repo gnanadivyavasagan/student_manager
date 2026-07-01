@@ -1,0 +1,89 @@
+ 
+   C program is a bulding blocks of functions.
+   if a C program containes atleast one function means, then it must
+   be main();
+
+   Every C program execution starts from main().
+ 
+    function: 
+    ---------  It is a sub program in a main program to perform,
+    a specific task.	
+
+    Advantages:
+    -----------
+    i) Easy to write, Easy to understand, Easy to Debug the code.
+    ii) Reusability
+    iii)Efficient memory utilization
+        
+
+	When a function is called then there is a memory allocation is done in a stack and that is called push operation, Once if the function task is over, then it will de-allocates the memory is called pop operation.
+
+	For every C programming execution, 8MB memory is allocated in a stack.
+
+	function instructions are executing from code section, and functions local variables and function return addresses memory is allocated in a stack section. 
+
+ Any program execution starts with main() and ends with main().
+
+	syntax for function :
+	--------------------
+	return-type function_name(arguements);
+
+    To design any function, there are 3 aspects.
+
+    1) function declaration : it is an intimation to a compiler that what type of 
+       ------------------------------ function it is before we use it.
+
+    2) function call : To call a function. 
+       -------------------	
+
+    3) function definition : it is an actual function implementation
+         -------------------------   to perform a specific task.
+      	
+	
+		     function catogories
+		-----------------------------
+			      |
+    			      |
+	------------------------------------------------
+	|					               |
+	|					               |
+   Pre-defined functions		  User-defined functions	
+	 
+    (library functions)       (user implemented functions in program)
+
+   
+    function-aspect      pre-defined fun     User-defined fun
+    ---------------------      --------------------     -----------------------
+    fun declaration       header file            program
+
+    fun call                   program               program
+
+    fun definition          library                  program
+
+
+    A function can be in 4types (pre-define or user-defined)
+    ---------------------------
+    i) A function has no return value and no arguments.	
+       Ex : a) void fun(void);
+
+   ii) A function has return value and no arguments.
+       Ex : a) int fun(void);
+	    b) char fun(void);
+	
+  iii) A function has no return value and has arguemnts.
+       Ex : a)void fun(int,char);
+	    b)void fun(char,float);
+	    c)void fun(double);
+	
+   iv) A function has return value and arguments.
+	Ex : a) int fun(int);
+	     b) char fun(char);
+	     c) float fun(float,double); 
+
+	
+   Actual arguments : Arguments that are present in the function call.
+   formal arguments : Arguments that are present in the function definition.
+
+
+
+

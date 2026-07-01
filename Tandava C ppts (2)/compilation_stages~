@@ -1,0 +1,116 @@
+/*
+ Program : Hello world printing
+ Date : 24-12-2021
+ User : Tandava Ramakrishna
+ */
+#include<stdio.h> //header file inclusion
+#define pi 3.14
+int main()  //programs starts here
+{
+    printf("Hello world\n"); //Hello world is printed on screen 
+
+    float f = pi*2;
+
+    printf("f = %f\n",f);
+}
+
+
+Compilation Stages:
+-------------------
+
+Compilation process devided into four parts:
+1) Preprocessor
+2) Translator
+3) Assembler
+4) Linker
+
+1) Preprocessor :
+   ---------------------
+Preprocessor is first stage in compilation process.
+In this stage we will get pure c file or extended c file from
+our source file.
+Preprocessor tasks are:
+1) Includes the header file
+2) Removes the comments
+3) Replaces the macros
+4) Performs the conditional compilation
+
+Command to compile program upto preprocessor stage:
+
+cc -E filename.c -o filename.i
+
+To check the result of the preprocessor stage:
+vi filename.i
+
+ 2) Translator:
+  ------------------
+Translator is second stage in compilation process.
+In this stage preprocessed code is translated to assembly
+instructions.
+Translator tasks are:
+1) Generate assembly code
+2) Checking for syntactical error
+
+Command to compile program upto Translator stage:
+cc -S filename.i -o filename.s
+
+To check the result of the Translator stage:
+vi filename.s
+
+
+
+ 3) Assembler :
+ ---------------
+Assembler is third stage in compilation process.
+
+In this stage assembly program get converted into
+machine understandable code.
+
+Command to compile program upto Assembler stage:
+cc -c filename.s -o filename.o
+
+To check the result of the Assembler stage:
+vi filename.o
+
+xxd filename.o ----> displays the object file information in the hexa-decimal format.
+
+  Disassemble:
+ --------------
+The contents of this file (vi filename.o) are in
+binary formate(machine understandable).
+
+To make this file user understandable we need to
+disassemble it.
+
+Command to disassemble file: objdump -D filename.o
+
+ 4) Linker :
+ -----------
+ Linker is fourthand last stage in compilation process.
+ In this stage it generates executable code.
+ Linker tasks are:
+ -----------------
+ 1) Linking with libraries.
+ 2) Searching for function definitions.
+
+Command to compile program upto Linker stage:
+cc filename.o
+
+
+Single command to compile source code upto translator stage:
+------------------------------------------------------------
+cc -S filename.c
+
+Single command to compile source code upto assembly stage:
+----------------------------------------------------------
+cc -c filename.c
+
+Command to generate all compilation stages resultant files:
+-----------------------------------------------------------
+cc -save-temps filename.c
+
+Command to create our own executable file :
+-------------------------------------------
+cc filename.c -o filename.exe
+
+
